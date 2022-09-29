@@ -1,0 +1,73 @@
+type: edu
+custom_name: stage1
+files:
+- name: src/bot/SimpleBot.kt
+  visible: true
+  text: |
+    package bot
+
+    fun main() {
+        // write your code here
+    }
+  learner_created: false
+- name: test/ChattyBotTest.java
+  visible: false
+  text: |
+    import org.hyperskill.hstest.stage.StageTest;
+    import org.hyperskill.hstest.testcase.CheckResult;
+    import org.hyperskill.hstest.testcase.TestCase;
+
+    import java.util.Collections;
+    import java.util.List;
+
+
+    public class ChattyBotTest extends StageTest<Object> {
+
+        @Override
+        public List<TestCase<Object>> generate() {
+            return Collections.singletonList(
+                new TestCase<>()
+            );
+        }
+
+        @Override
+        public CheckResult check(String reply, Object clue) {
+
+            String[] lines = reply.trim().split("\n");
+
+            if (lines.length != 2) {
+                return CheckResult.wrong(
+                    "You should output exactly 2 lines!\n" +
+                    "Lines found: " + lines.length
+                );
+            }
+
+            String secondLine = lines[1];
+
+            if (!secondLine.matches(".*\\d.*")) {
+                return CheckResult.wrong(
+                    "The second line should contain a year!\n" +
+                    "Your second line: \"" + secondLine + "\""
+                );
+            }
+
+            return CheckResult.correct();
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10770#comment
+status: Failed
+feedback:
+  message: "\nFAILURE: Build failed with an exception.\n\n* What went wrong:\nCould\
+    \ not resolve all files for configuration &#39;classpath&#39;.\n&gt; Could not\
+    \ resolve com.github.hyperskill.hs-gradle-plugin:build:release-SNAPSHOT.\n  Required\
+    \ by:\n      unspecified:unspecified:unspecified &gt; com.github.hyperskill:hs-gradle-plugin:release-SNAPSHOT:v1.1-g905ba16-19\n\
+    \   &gt; Could not resolve com.github.hyperskill.hs-gradle-plugin:build:release-SNAPSHOT.\n\
+    \      &gt; Could not get resource &#39;https://jitpack.io/com/github/hyperskill/hs-gradle-plugin/build/release-SNAPSHOT/build-release-v1.1-g905ba16-19.pom&#39;.\n\
+    \         &gt; Could not HEAD &#39;https://jitpack.io/com/github/hyperskill/hs-gradle-plugin/build/release-SNAPSHOT/build-release-v1.1-g905ba16-19.pom&#39;.\
+    \ Received status code 521 from server: \n\n* Try:\n&gt; Run with --stacktrace\
+    \ option to get the stack trace.\n&gt; Run with --info or --debug option to get\
+    \ more log output.\n&gt; Run with --scan to get full insights.\n\n* Get more help\
+    \ at https://help.gradle.org\n\nBUILD FAILED in 39s\n"
+  time: Wed, 28 Sep 2022 11:24:52 UTC
+record: 1
