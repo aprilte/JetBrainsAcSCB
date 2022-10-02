@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":util:main" external.linked.project.path="$MODULE_DIR$/../../../util" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Simple Chatty Bot" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":Topics-Characters-A_capital_letter_or_a_digit:test" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Simple Chatty Bot" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
@@ -11,14 +11,20 @@
             <flagArg name="noStdlib" arg="true" />
           </flagArguments>
           <stringArguments>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../util/build/classes/kotlin/main" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/build/classes/kotlin/test" />
             <stringArg name="jvmTarget" arg="1.8" />
-            <stringArg name="moduleName" arg="util" />
+            <stringArg name="moduleName" arg="Topics-Characters-A_capital_letter_or_a_digit" />
             <stringArg name="apiVersion" arg="1.6" />
             <stringArg name="languageVersion" arg="1.6" />
           </stringArguments>
           <arrayArguments>
-            <arrayArg name="friendPaths" />
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/build/libs/Topics-Characters-A_capital_letter_or_a_digit.jar</arg>
+              </args>
+            </arrayArg>
             <arrayArg name="pluginClasspaths">
               <args>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.6.10/dbe683647dcb04cda92fe4423acb741a2f144a69/kotlin-scripting-jvm-1.6.10.jar</arg>
@@ -36,11 +42,15 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../util/out/production/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/out/test/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../util/src" />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/src/test" />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Characters/A capital letter or a digit/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Simple_Chatty_Bot.Topics-Characters-A_capital_letter_or_a_digit.main" />
+    <orderEntry type="module" module-name="Simple_Chatty_Bot.util.main" />
+    <orderEntry type="module" module-name="Simple_Chatty_Bot.util.test" production-on-test="" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10" level="project" />
@@ -48,4 +58,5 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10" level="project" />
     <orderEntry type="library" name="Gradle: com.github.hyperskill:hs-test:release-SNAPSHOT" level="project" />
   </component>
+  <component name="TestModuleProperties" production-module="Simple_Chatty_Bot.Topics-Characters-A_capital_letter_or_a_digit.main" />
 </module>
